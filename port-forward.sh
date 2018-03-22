@@ -1,8 +1,8 @@
 #!/bin/sh
 
+host_ip="127.0.0.1"
 host_port="8000"
 guest_port="80"
-host_ip="127.0.0.1"
 
 while [ "$1" != "" ]; do
     case $1 in
@@ -35,8 +35,8 @@ if [[ $destroy ]]; then
 fi
 
 
+echo "Host IP: ${host_ip}"
 echo "Host port: ${host_port}"
-echo "Guest IP: ${host_ip}"
 echo "Guest port: ${guest_port}"
 
 # Set forwarding
