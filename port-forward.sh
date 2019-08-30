@@ -18,7 +18,6 @@ while [ "$1" != "" ]; do
         -d | --destroy )        shift
                                 destroy=true
                                 ;;
-
 #        -h | --help )           usage
 #                                exit
 #                                ;;
